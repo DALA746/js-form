@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(#ca3eb3, rgb(183, 0, 255), blue);
+    font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+hr {
+    border: 2px solid #ff55f974;
+    margin-bottom: 25px;
+  } 
+
+#form {
+    background-color:white;
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* stylar både label och input eftersom ingår i en div */ 
+.form-content {
+    padding: 1rem;
+}
+
+/* alla div:ar som har class med input-group*/
+.input-group {
+    margin: 0.7rem;
+    position: relative;
+}
+
+.input-group label, 
+.input-group input, 
+.input-group small {
+    display: block;
+    width: 100%;
+}
+
+.input-group input {
+    padding: 0.5rem;
+    font-size:1rem;
+    background-color: rgb(252, 227, 255);
+    opacity: 1;
+    border:none;
+}
+
+button {
+    background-color: blueviolet;
+    color:white;
+    padding: 14px 20px;
+    margin: 8px 0; 
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity:0.9;
+    font-size: 1rem;
+    border-radius: 10px;
+}  
+
+button:hover{
+    opacity:1;
+}
+
+.fa-exclamation-circle {
+    position: absolute;
+    right: 0.5rem;
+    top: 2.1rem;
+    color: #c61313;
+    visibility: hidden;
+  }
+
+  .fa-check-circle {
+    position: absolute;
+    right: 0.5rem;
+    top: 2.1rem;
+    color: #239207;
+    visibility: hidden;
+  }
+  
+  .input-group small {
+    color: #c61313;
+    visibility: hidden;
+    /* display: none; */
+  }
+  
+  .error input {
+    border: 1px solid #c61313;
+    outline: 1px solid #c61313;
+  }
+  
+  .error .fa-exclamation-circle,
+  .error small {
+    visibility: visible;
+  }
+  
+  /* FÖR SUCCESS INPUT */
+  .success input {
+    border: 1px solid #239207;
+    outline: 1px solid #239207;
+  }
+  
+  .success .fa-check-circle {
+    visibility: visible;
+  }
